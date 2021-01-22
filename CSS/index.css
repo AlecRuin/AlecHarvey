@@ -38,3 +38,7 @@ body {
   font-family:Arial Black;
   color:#4B5267;
 }
+footer{
+	position:fixed;
+	height:100px;
+}
