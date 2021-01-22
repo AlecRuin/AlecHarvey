@@ -1,11 +1,29 @@
 header{
-	background-color:DEB887;
-	position:absolute;
-	width:100%
+	background-color:#8661C1;
+	position:fixed;
+	width:100%;
+	z-index:10;
+	top:0px
+	
 }
-nav{
-	display:inline-block;
+ul {
+  margin: 20px auto;
+  padding: 0 20px;
+  text-align: center;
 }
-.link{
-	display:inline-block;
+li {
+  display:inline-block;
+  color: #FFF;
+  font-family:Arial Black;
+  font-size: 16px;
+  font-weight: 300;
+  width:160px;
+}
+a{
+	text-decoration:none;
+	color:#2E294E;
+}
+body {
+  background-color: #FFF;
+  margin: 0 auto;
 }
