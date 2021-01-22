@@ -10,6 +10,7 @@ ul {
   margin: 20px auto;
   padding: 0 20px;
   text-align: center;
+  width:100%;
 }
 li {
   display:inline-block;
@@ -27,6 +28,20 @@ body {
   background-color: #FFF;
   margin: 0 auto;
 }
+footer{
+	text-align:center;
+	box-sizing: border-box;
+	position:fixed;
+	height:100px;
+	text-align: center;
+	width:100%;
+}
+.example{
+	height:auto;
+	width:10%;
+	float:left;
+	margin:10px;
+}
 .introduction{
   background-color: #EFBCD5;
   box-sizing: border-box;
@@ -37,8 +52,4 @@ body {
   top:50px;
   font-family:Arial Black;
   color:#4B5267;
-}
-footer{
-	position:fixed;
-	height:100px;
 }
