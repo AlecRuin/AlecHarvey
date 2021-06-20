@@ -18,6 +18,8 @@ body {
 	background-image:url("https://www.alecharvey.net/graphics/hamburger.png");
 	background-repeat:no-repeat;
 	background-size:40%;
+	background-position:center;
+	cursor:pointer;
 }
 .example{
 	height:auto;
