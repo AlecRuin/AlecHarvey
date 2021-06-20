@@ -1,6 +1,5 @@
 body {
   background-color: #F1F1F1;
-  margin: 0 auto;
 }
 .Nav-Main{
 	width:100%;
@@ -20,29 +19,4 @@ body {
 	background-size:40%;
 	background-position:center;
 	cursor:pointer;
-}
-.example{
-	height:auto;
-	width:10%;
-	float:left;
-	margin:10px;
-	z-index:2;
-}
-.showcase{
-	box-sizing: border-box;
-	padding-top:10px;
-	position:relative;
-	font-family:Arial Black;
-	text-align:center;
-}
-.videoshowcase{
-	text-align:center;
-	display:inline-block;
-	height:auto;
-	width:49.8%;
-	padding-top:0px;
-	padding-right:0px;
-	padding-left:0px;
-	padding-bottom:0px;
-	margin:0px;
 }
