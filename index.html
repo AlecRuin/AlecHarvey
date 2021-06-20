@@ -5,45 +5,82 @@
 	<meta charset="utf-8">
 	<meta name=viewport content="width=device-width, initial-scale=1">
     <title>Alec Harvey's Portfolio</title>
-	<link href="https://www.alecharvey.net/CSS/index.css" rel="stylesheet">
+	<link href="CSS/index.css" rel="stylesheet">
 	<link rel="icon" href="https://www.alecharvey.net/graphics/AV logo.png">
   </head>
   
   <body>
 		<nav class="Nav-Main">
-			<div class="Nav-Toggle-Button"></div>
+			<div class="Nav-Toggle-Button" onclick="ToggleNav()"></div>
 			<ul>
 				<li><a href="https://www.alecharvey.net/index.html">Home</a></li>
-				<li><a href="https://www.alecharvey.net/contact.html">Contact</a></li>
 				<li><a href="https://www.alecharvey.net/aboutme.html">About Me</a></li>
+				<li><a href="https://www.alecharvey.net/aboutme.html">Contact</a></li>
 				<li><a href="https://www.alecharvey.net/kain.html">Kain</a></li>
 			</ul>
 		</nav>
-	<div class="introduction">
-		<h1 width="100%">
+	<aside class="Nav-Aside">
+		<ul>
+			<li><u><span>Home</span></u></li>
+			<li><a href="https://www.alecharvey.net#landing">Landing Page</a></li>
+			<li><span>Portfolio</span></li>
+			<li><a href="https://www.alecharvey.net#Project 1">Project 1</a></li>
+			<li><a href="https://www.alecharvey.net">Project 1.5</a></li>
+			<li><a href="https://www.alecharvey.net">Project 2</a></li>
+			<li><span>Gallery</span></li>
+			<li><a href="https://www.alecharvey.net">placeholder</a></li>
+			<li><a href="https://www.alecharvey.net">placeholder</a></li>
+			<li><a href="https://www.alecharvey.net">placeholder</a></li>
+			<li><a href="https://www.alecharvey.net">Kain</a></li>
+		</ul>
+	</aside>
+		
+	<div class="introduction" id="landing">
+		<h1>
 			HEYO!
 		</h1>	
-		<img class="example" src="https://www.alecharvey.net/graphics/example.png">
 		<p class="text">The purpose of the site is to showcase what I know in regards to HTML, CSS, and JS. Feel free to navigate, and let me know if something doesn't look right.</p>
 	</div>
-	<div class="showcase" width="100%">
+	
+	<div class="portfolio">
+	<h1>Portfolio</h1>
+	
+	<div class="Project1" id="Project 1">
+	<h3>Project 1: Battleblox</h3>
+	<ul>
+		<li><p>Battleblox was a game I was making for 6 months. The concept was to build a vehicle with blocks any way you want. 
+	Afterwards, you would drive your custom vehicle to battle other players.</p></li>
+		<li><video loop autoplay muted>
+			<source src="https://www.alecharvey.net/graphics/vehicle driving and shooting.mp4" type="video/mp4">
+		</video></li>
+		</ul>
+	</div>
+	
+	<div class="Project2">
+	
+	<h3>Project 1.5</h3>
+	</div>
+	
+	<div class="Project2">
+	<h3>Project 2</h3>
 		<video class="videoshowcase"  loop autoplay muted>
 			<source src="https://www.alecharvey.net/graphics/The Legend of Smile Boy.mp4" type="video/mp4">
 		</video>
-		<video class="videoshowcase"  loop autoplay muted>
-			<source src="https://www.alecharvey.net/graphics/vehicle driving and shooting.mp4" type="video/mp4">
-		</video>
 	</div>
+	
 	<div>
 		<p>*important text*</p>
 	</div>
-		<footer>
-			<ul >
-				<li><a href="https://www.alecharvey.net/index.html">Home</a></li>
-				<li><a href="https://www.alecharvey.net/contact.html">Contact</a></li>
-				<li><a href="https://www.alecharvey.net/aboutme.html">About Me</a></li>
-				<li><a href="https://www.alecharvey.net/kain.html">Kain</a></li>
-			</ul>
-		</footer>
+	
+	<div class="footer">
+		<ul>
+			<li><a href="https://www.alecharvey.net/index.html">Home</a></li>
+			<li><a href="https://www.alecharvey.net/contact.html">Contact</a></li>
+			<li><a href="https://www.alecharvey.net/aboutme.html">About Me</a></li>
+			<li><a href="https://www.alecharvey.net/kain.html">Kain</a></li>
+		</ul>
+	</div>
+	
 	</body>
+	<script src="JS/main.js"></script>
 </html>
