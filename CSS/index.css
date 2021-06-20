@@ -98,7 +98,7 @@ body {
 	margin:auto;
 	font-size:21px;
 }
-.Project1 ul{
+.Project1 ul,.Project2 ul{
 	list-style: none;
     width: 100%;
     height: 200px;
@@ -106,14 +106,14 @@ body {
 	flex-wrap:wrap;
 	display: inline-block;
 }
-.Project1 ul li video,.Project1 ul li p{
+.Project1 ul li video,.Project1 ul li p,.Project2 ul li video,.Project2 ul li p{
     width: 40%;
     height: 100%;
 }
-.Project1 ul li video{
+.Project1 ul li video,.Project2 ul li video{
 	float:right;
 }
-.Project1 ul li p{
+.Project1 ul li p,.Project2 ul li video{
 	float:left;
 	text-align:center;
 	font-size:21px;
