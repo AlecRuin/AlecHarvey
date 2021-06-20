@@ -6,6 +6,13 @@ body {
 	width:100%;
 	height:10%;
 	background-color:#FFF;
+	display:flex;
+	flex-wrap:wrap;
+	z-index:1000;
+	
+}
+.Nav-Toggle-Button{
+	
 }
 .example{
 	height:auto;
