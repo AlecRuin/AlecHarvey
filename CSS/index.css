@@ -25,6 +25,11 @@ body {
 .Nav-Toggle-Button:hover{
 	opacity:80%;
 }
+.logo{
+height:100%;
+width:100%;
+float:right;
+}
 .Nav-Main ul {
 	font-weight:900;
 	display:flex;
