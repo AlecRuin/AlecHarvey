@@ -1,21 +1,59 @@
-body {
-  background-color: #969696;
-
+:root{
+	--FontType:Comic Sans MS;
 }
-.Nav-Main{
-	width:100%;
+body {
+    background-color: #969696;
+	margin: 0%;
+  }
+  html{
+      scroll-behavior: smooth;
+  }
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+  }
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+	padding-top: 60px;
+	}
+.Aside-Sticky + .content {
+	padding-top: 60px;
+}
+.Aside-Sticky {
+	position: fixed;
+	top: 60px;
+	box-sizing: border-box;
+	left:0;
+	bottom:0;
+	width:60px;
+	height:auto;
+	background-color:#000;
+	z-index:1000;
+	transition:all 0.3s ease-in-out;
+  }
+  h1{
+      display: flex;
+      justify-content: center;
+	  align-items: center;
+      height: 58px;
+      border-bottom: 2px solid black;
+	  margin: 0%;
+  }
+  .Nav-Bar-Main{
+	width: 100%;
+	align-items: center;
+	overflow: hidden;
 	height:60px;
 	background-color:#FFF;
-	display:flex;
-	flex-wrap:wrap;
-	z-index:999;
-	position:fixed;
-	top:0;
-	left:0;
-}
-.Nav-Toggle-Button{
-	width:60px;
+	display: flex;
+	flex: 1;
+  }
+  .Nav-Button{
 	height:100%;
+	display: flex;
+	width: 60px;
 	background-color:#454545;
 	background-image:url("https://www.alecharvey.net/graphics/hamburger.png");
 	background-repeat:no-repeat;
@@ -23,47 +61,53 @@ body {
 	background-position:center;
 	cursor:pointer;
 }
-.Nav-Toggle-Button:hover{
+.Nav-Button:hover{
 	opacity:80%;
 }
-.Nav-Main ul {
-	font-weight:900;
-	display:flex;
-	flex-wrap:wrap;
-	padding-left:15px;
+.Nav-Bar-Main nav{
+	left:60px;
+	flex: 80;
+	display: flex;
 }
-.Nav-Main ul li{
-	list-style:none;
-	line-height:100%;
+.Nav-Bar-Main nav ul{
+    display: flex;
+    flex-wrap: wrap;
+	flex: 1;
+    justify-content: space-around;
+    flex-direction: row;
 }
-.Nav-Main ul li a{
-	display:block;
-	height:100%;
+.Nav-Bar-Main nav ul li {
+    list-style:none;
+}
+.Nav-Bar-Main nav ul li a{
+	display: flex;
+	flex: 1;
 	padding:0 25px;
 	text-transform:uppercase;
 	text-decoration:none;
 	color:#1c1c1c;
-	font-family:Comic Sans MS;
-	font-size:16px;
+	font-family:var(--FontType);
+	font-weight: bold;
+	font-size:20px;
 }
-.Nav-Main img{
-height:40px;
-width:auto;
-padding:5px;
-position:absolute;
-right:0;
+.Website-Logo{
+    height: 85%;
+	display: flex;
+	flex: 2;
+}
+.Main-Screen{
+	display: flex;
+	flex-wrap: nowrap;
+	flex: 1;
+	flex-direction: row;
+	justify-content: flex-end;
 }
 .Nav-Aside{
-	position:fixed;
-	left:0;
-	bottom:0;
-	width:50px;
-	height:calc(100vh-60px);
-	padding:0 5px;
+	flex:2;
+	display: flex;
 	background-color:#000;
-	top:60px;
-	z-index:1000;
-	transition:all 0.3s ease-in-out;
+	width: 60px;
+	transition:width 0.3s ease-in-out;
 }
 .Nav-Aside ul{
 	font-weight:900;
@@ -75,12 +119,15 @@ right:0;
 .Nav-Aside ul li{
 	line-height:40px;
 	list-style:none;
-
+}
+.White-Underline{
+	border-bottom:2px solid white;
+	border-top:2px solid white;
 }
 .Nav-Aside ul li span,.Nav-Aside ul li a{
 	display:block;
 	height:40px;
-	padding:0 10px;
+	padding: 5px 10px;
 	text-decoration:none;
 	text-transform:uppercase;
 	color:#fff;
@@ -93,66 +140,41 @@ right:0;
 .Nav-Aside ul li a:hover{
 	background-color:#454545;
 }
-.introduction,.portfolio{
-	position:relative;
-	padding:50px 60px;
-	font-family:Comic Sans MS;
-	text-align:center;
-	font-weight:900;
-	margin:auto;
+.Content-Space{
+	margin: 0;
+	padding: 0;
+	height: calc(100vh - 120px);
+	width:calc(100% - 60px);
+	right: 0;
+	display: flex;
+    flex-direction: column;
 }
-.introduction p {
-	width:40%;
-	margin:auto;
-	font-size:21px;
+.SPACE{
+	margin: 150px 0px;
+	display: flex;
+	font-family: var(--FontType);
+	height: max-content;
+	width: 100%;
+	float: right;
+	flex-direction: row;
 }
-.Project1 ul,.Project2 ul{
-	list-style: none;
-    width: 100%;
-    height: 200px;
-	display:flex;
-	flex-wrap:wrap;
-	display: inline-block;
+.EMPTY-SPACE{
+	height: 740px;
+	width: 100%;
 }
-.Project1 ul li video,.Project1 ul li p,.Project2 ul li video,.Project2 ul li p{
-    width: 40%;
-    height: 100%;
+h2{
+	margin: 0;
+	padding: 24px 0px 24px 24px;
 }
-.Project1 ul li video,.Project2 ul li video{
-	float:right;
+.SPACE img{
+	padding: 20px;
+	width: 150px;
+	height: 150px;
 }
-.Project1 ul li p,.Project2 ul li video{
-	float:left;
-	text-align:center;
-	font-size:21px;
-}
-.footer{
-	width:100%;
-	height:60px;
-	position:absolute;
-	margin:0;
-	background-color:#FFF;
-	bottom:0;
-	padding:0;
-}
-.footer ul {
-	font-weight:900;
-	display:flex;
-	flex-wrap:wrap;
-	margin:auto;
-}
-.footer ul li{
-	list-style:none;
-	line-height:100%;
-}
-.footer ul li a{
-	display:block;
-	height:100%;
-	right:50px;
-	padding:0 20px;
-	text-transform:uppercase;
-	text-decoration:none;
-	color:#1c1c1c;
-	font-family:Comic Sans MS;
-	font-size:16px;
+.SPACE p{
+	width: fit-content;
+    height: 80%;
+    padding: 0px 60px;
+    font-size: 20px;
+	margin: 0;
 }

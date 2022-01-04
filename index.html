@@ -5,85 +5,54 @@
 	<meta charset="utf-8">
 	<meta name=viewport content="width=device-width, initial-scale=1">
     <title>Alec Harvey's Portfolio</title>
-	<link href="CSS/index.css" rel="stylesheet">
+	<link href="CSS/index2.css" rel="stylesheet">
 	<link rel="icon" href="https://www.alecharvey.net/graphics/AV logo.png">
   </head>
-  
   <body>
-		<nav class="Nav-Main">
-			<div class="Nav-Toggle-Button" onclick="ToggleNav()"></div>
+	<h1 class="Name-of-site">Alec Harvey's Portfolio</h1>
+	<div class="Nav-Bar-Main" id="navbar">
+		<div class="Nav-Button"onclick="ToggleNav()"></div>
+		<nav>
 			<ul>
 				<li><a href="https://www.alecharvey.net/index.html">Home</a></li>
+				<li><a href="https://www.alecharvey.net/Projects/Project-Landing.html">Projects</a></li>
 				<li><a href="https://www.alecharvey.net/aboutme.html">About Me</a></li>
-				<li><a href="https://www.alecharvey.net/aboutme.html">Contact</a></li>
-				<li><a href="https://www.alecharvey.net/kain.html">Kain</a></li>
+				<li><a href="https://www.alecharvey.net/kain.html">Contact Me</a></li>
 			</ul>
-			<img src="https://www.alecharvey.net/graphics/AV logo.png"/>
 		</nav>
-	<aside class="Nav-Aside">
+		<img class="Website-Logo" src="https://www.alecharvey.net/graphics/AV logo.png"/>
+	</div>
+	<div class="Main-Screen">
+	<aside class="Nav-Aside" id="Aside">
 		<ul>
-			<li><u><span>Home</span></u></li>
+			<li ><span class="White-Underline">Home</span></li>
 			<li><a href="https://www.alecharvey.net#landing">Landing Page</a></li>
-			<li><span>Portfolio</span></li>
+			<li><span class="White-Underline">Portfolio</span></li>
 			<li><a href="https://www.alecharvey.net#Project 1">Project 1</a></li>
 			<li><a href="https://www.alecharvey.net#Project 1.5">Project 1.5</a></li>
 			<li><a href="https://www.alecharvey.net#Project 2">Project 2</a></li>
-			<li><span>Gallery</span></li>
+			<li><span class="White-Underline">Gallery</span></li>
 			<li><a href="https://www.alecharvey.net">placeholder</a></li>
 			<li><a href="https://www.alecharvey.net">placeholder</a></li>
 			<li><a href="https://www.alecharvey.net">placeholder</a></li>
 			<li><a href="https://www.alecharvey.net">Kain</a></li>
 		</ul>
 	</aside>
-		
-	<div class="introduction" id="landing">
-		<h1>
-			HEYO!
-		</h1>	
-		<p class="text">The purpose of the site is to showcase what I know in regards to HTML, CSS, and JS. Feel free to navigate, and let me know if something doesn't look right.</p>
+		<div class="Content-Space">
+			<div class="SPACE">
+				<div class="Info">
+					<h2>Home of the Cursed Programming!</h2>
+					<p>Welcome to the landing page of my homebrew website. I will occasionally stream to here and reference projects I worked on. Above is some quick links to help you navigate the site better. 
+						The side panel is a more extensive view of all of this site's contents. Have fun exploring!
+					</p>
+				</div>
+				<img src="https://www.alecharvey.net/graphics/happy.png"/>	
+			</div>	
+			<div class="EMPTY-SPACE"></div>
+		</div>
 	</div>
-	
-	<div class="portfolio">
-	<h1>Portfolio</h1>
-	
-	<div class="Project1" id="Project 1">
-	<h3>Project 1: Battleblox</h3>
-	<ul>
-		<li><p>Battleblox was a game I was making for 6 months. The concept was to build a vehicle with blocks any way you want. 
-	Afterwards, you would drive your custom vehicle to battle other players.</p></li>
-		<li><video loop autoplay muted><source src="https://www.alecharvey.net/graphics/vehicle driving and shooting.mp4" type="video/mp4"></video></li>
-		</ul>
-	</div>
-	
-	<div class="Project1.5" id="Project 1.5">
-		<h3>Project 1.5: Battleblox 2</h3>
-		<ul>
-			<li><p>Battleblox 2 is a recreation of Battleblox 1. Currently has floodfill block destruction, better GUI, multislots for vehicles, and extreme ease of use for building the vehicle. I am still working on this, but progress is very slow.</p></li>
-			<li><video></video>
-		</ul>
-	</div>
-	
-	<div class="Project2" id="Project 2">
-		<h3>Project 2</h3>
-		<ul>
-			<li><p>Smile Boi was an entity I handmade in for Minecraft. Its a reskin of a creeper, with lightning moves and a happy attitude. Mind the radioactive sheep.</p></li>
-			<li><video class="videoshowcase"  loop autoplay muted><source src="https://www.alecharvey.net/graphics/The Legend of Smile Boy.mp4" type="video/mp4"></video></li>
-		</ul>
-	</div>
-	
-	<div>
-		<p>*important text*</p>
-	</div>
-	
-	<div class="footer">
-		<ul>
-			<li><a href="https://www.alecharvey.net/index.html">Home</a></li>
-			<li><a href="https://www.alecharvey.net/contact.html">Contact</a></li>
-			<li><a href="https://www.alecharvey.net/aboutme.html">About Me</a></li>
-			<li><a href="https://www.alecharvey.net/kain.html">Kain</a></li>
-		</ul>
-	</div>
-	
-	</body>
-	<script src="https://www.alecharvey.net/JS/main.js"></script>
+  </body>  
+  
+
+	<script src="./JS/main.js"></script>
 </html>
