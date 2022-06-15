@@ -1,13 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
 import NavBar from './component/navBar';
 import { useState } from 'react';
 import Homepage from './pages/home';
+import AboutMe from './component/aboutMe';
 function App() {
   const [currentPage,setCurrentPage] = useState("home")
 
   const renderPage=()=>{
+    console.log("current page: ",currentPage);
     switch (currentPage){
+      case "About-Me":
+        return <AboutMe/>
       default:
         return <Homepage/>
     }
@@ -15,21 +18,15 @@ function App() {
   return (
     <div className="App">
       <header>
-        {/* <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a> */}
         <NavBar currentPage={currentPage} setCurrentPage={setCurrentPage}/>
       </header>
-      {renderPage()}
+      <div className="main-body">
+        <div className='card-spacing'>
+          <div className='card'>
+            {renderPage()}
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

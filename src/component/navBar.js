@@ -1,16 +1,15 @@
 import logo from "../logo.svg"
 function navBar(props){
-    console.log(props);
     return(
         <nav>
-            <button id="logo">
-                <img src={logo} className="App-logo">
+            <button id="logo" onClick={()=>props.setCurrentPage("home")}>
+                <img src={logo} className="App-logo" alt="signature">
                 </img>
             </button>
-            <button>
+            <button onClick={()=>props.setCurrentPage("home")}>
                 Home
             </button>
-            <button>
+            <button onClick={()=>props.setCurrentPage("About-Me")}>
                 About Me
             </button>
             <button>
@@ -20,7 +19,7 @@ function navBar(props){
                 Education
             </button>
             <button>
-                Experience
+                Projects
             </button>
             <button>
                 Contact
