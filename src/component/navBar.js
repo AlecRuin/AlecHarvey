@@ -12,17 +12,17 @@ function navBar(props){
             <button onClick={()=>props.setCurrentPage("About-Me")}>
                 About Me
             </button>
-            <button>
+            <button onClick={()=>props.setCurrentPage("Skills")}>
                 Skills
             </button>
-            <button>
+            <button onClick={()=>props.setCurrentPage("Education")}>
                 Education
             </button>
-            <button>
+            <button onClick={()=>props.setCurrentPage("Projects")}>
                 Projects
             </button>
-            <button>
-                Contact
+            <button onClick={()=>props.setCurrentPage("Contact-Me")}>
+                Contact Me
             </button>
         </nav>
     )
