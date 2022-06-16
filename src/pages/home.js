@@ -1,5 +1,6 @@
 import me from "../images/me.png"
 import github from "../images/githubicon.png"
+import { print } from "@alecruin/color-logger"
 import linkedin from "../images/linkedinicon.png"
 import stackoverflow from "../images/stackoverflowicon.png"
 import instagram from "../images/instagramicon.png"
@@ -32,16 +33,15 @@ const Homepage=()=>{
         }
     ]
     const populatefooter=(index)=>{
-        console.log(index);
+        print("populating social icons", new Error())
         return(
-            <li>
+            <li key={index.name}>
                 <a className="icon" href={index.link} target="_blank" rel="noreferrer">
                     <img src={index.img} alt={index.name}></img>
                 </a>
             </li>
         )
-    } 
-    console.log(linksandalts);
+    }
     return(
         <div className="home-div">
             <img src={me} className="large-box" alt="profile of me" id="picture"></img>
