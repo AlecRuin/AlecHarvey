@@ -48,9 +48,9 @@ nav{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  flex-wrap: wrap;
   max-height: 40px;
   min-height: 5vh;
+  align-items: center;
   align-content: center;
 }
 .main-body{
@@ -149,6 +149,12 @@ ul{
   }
   h1{
     margin-top: 0;
+  }
+  #logo{
+    display: none;
+  }
+  .button{
+    width: 16%;
   }
   .large-box{
     width: 70%;

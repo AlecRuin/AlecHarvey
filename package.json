@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://AlecRuin.github.io/AlecHarvey",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "@alecruin/color-logger": "1.0.1",
