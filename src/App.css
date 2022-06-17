@@ -24,7 +24,7 @@
 .highlight-color{
   color: #EF626C;
 }
-button{
+.button{
   display: flex;
   border: 0px;
   padding: 0px 15px;
@@ -33,6 +33,15 @@ button{
   border-radius: .5rem;
   color: #F6E8EA;
   min-height: 100%;
+}
+.email-button{
+  width: 50%;
+  height:20%;
+  text-decoration: none;
+  color: #84DCCF;
+  border: 2px solid #919191;
+  border-radius: 1rem;
+  background-color: #919191;
 }
 nav{
   background-color: #22181c;
