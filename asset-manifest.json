@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/AlecHarvey/static/css/main.dd2625a2.css",
+    "main.js": "/AlecHarvey/static/js/main.57cbb02d.js",
+    "static/js/787.1ed0c42c.chunk.js": "/AlecHarvey/static/js/787.1ed0c42c.chunk.js",
+    "static/media/bb2block.png": "/AlecHarvey/static/media/bb2block.85f1602f26f27a65b516.png",
+    "static/media/me.png": "/AlecHarvey/static/media/me.ef322ead9e6a787ccf7a.png",
+    "static/media/hipsternodeimage.png": "/AlecHarvey/static/media/hipsternodeimage.b1892b8f60e211546ca3.png",
+    "static/media/discordicon.png": "/AlecHarvey/static/media/discordicon.69ddddc05780b9b315fd.png",
+    "static/media/logo.svg": "/AlecHarvey/static/media/logo.97b5f9c733bf4085778b73add82cfed5.svg",
+    "index.html": "/AlecHarvey/index.html",
+    "main.dd2625a2.css.map": "/AlecHarvey/static/css/main.dd2625a2.css.map",
+    "main.57cbb02d.js.map": "/AlecHarvey/static/js/main.57cbb02d.js.map",
+    "787.1ed0c42c.chunk.js.map": "/AlecHarvey/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dd2625a2.css",
+    "static/js/main.57cbb02d.js"
+  ]
+}
