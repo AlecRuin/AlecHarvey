@@ -6,8 +6,8 @@ const Education = ()=>{
                     Education
                 </h2>
                 <p className="medium-font primary-text-color">
-                    I graduated Parkhill Highschool with a 2.8 GPA. I went to college for 1 semester before realising it was needlessly expensive and instead opted into a bootcamp through Kansas University.
-                    I got certifed from the KU Full-Stack coding bootcamp with an A!
+                    I graduated Parkhill Highschool in 2019. I went to college programming bootcamp through Kansas University.
+                    I got certifed from the KU Full-Stack coding bootcamp and learned MVC and React full stack programming.
                 </p>
             </div>
         </>

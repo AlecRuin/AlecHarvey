@@ -61,7 +61,7 @@ nav{
 }
 h1{
   margin: 0;
-  margin-top: 45%;
+  margin-top: 25%;
 }
 .card-spacing{
   padding: 5vh 15%;
@@ -75,6 +75,7 @@ h1{
 }
 .large-box{
   height: 50%;
+  width: 50%;
   margin-top: 5%;
   vertical-align: middle;
 }
@@ -84,20 +85,63 @@ h1{
 .medium-font{
   font-size: calc(1px + 2vmin);
 }
+.small-font{
+  font-size: calc(1px + 1.5vmin);
+}
 .small-box{
   padding: 0px 10%;
   height: 10%;
   width: 100%;
 }
 .picture{
+  max-width: calc(100% - 20px);
+  max-height: calc(100% - 20px);
   border: 10px solid rgb(0, 0, 0);
   border-radius: 1rem;
+  object-fit: contain;
+}
+.h90{
+  height: calc(90% - 6rem);
+}
+.w100{
+  width: 100%;
+}
+.w33{
+  width: 33%;
+}
+.h33{
+  height: 33%;
+}
+.flex{
+  display: flex;
+}
+.flex-column{
+  flex-direction: column;
+}
+.align-center{
+  align-items: center;
+}
+.h20{
+  height: 20%;
+}
+.h80{
+  height: 80%;
+}
+.w66{
+  width: 66%;
+}
+.m1{
+  margin: 2rem;
 }
 .home-div{
   height: 100%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-between;
 }
 a img{
   height: 100%;
@@ -106,6 +150,7 @@ ul li{
   padding: 0px 10px;
 }
 ul{
+  margin: 1rem 0px;
   list-style: none;
 }
 .footer-parent{

@@ -18,8 +18,8 @@ function navBar(props){
             <button className="button" onClick={()=>props.setCurrentPage("Education")}>
                 Education
             </button>
-            <button className="button" >
-                <strike>Projects</strike>
+            <button className="button" onClick={()=>props.setCurrentPage("Projects")}>
+                Projects
             </button>
             <button className="button" onClick={()=>props.setCurrentPage("Contact-Me")}>
                 Contact Me
